@@ -3,7 +3,7 @@
 
 one:
   name: dave
-  hashed_password:<%= User.encrypt_password('secret', SALT) %>
+  hashed_password: <%= User.encrypt_password('secret', SALT) %>
   salt: <%= SALT %>
 
 two:

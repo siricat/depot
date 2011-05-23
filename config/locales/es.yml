@@ -54,7 +54,8 @@ es:
         name: "Nombre"
         email: "E-mail"
         pay_type: "Forma de pago"
-  erroordrs: 
+        
+  errors: 
     template: 
       body: "Hay problemas con los siguientes campos:"
       header: 
