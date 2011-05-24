@@ -14,6 +14,9 @@ module Depot
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
+    
+    # lib directory is now an option you have to explicitly enable by the next line:
+    config.autoload_paths += %W(#{Rails.root}/lib)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
