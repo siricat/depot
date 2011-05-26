@@ -31,6 +31,12 @@
     <%= f.label :pay_type %><br />
     <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => t('.pay_prompt_html') %>
   </div>
+  
+  <div class="field">
+    <%= f.label :credit_card %><br />
+    <%= f.text_field :name, :size => 40, :placeholder => 'Enter your credit card number' %> 
+  </div>
+  
   <div class="actions">
     <%= f.submit t('.submit') %>
   </div>
