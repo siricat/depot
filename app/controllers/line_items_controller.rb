@@ -44,8 +44,15 @@ class LineItemsController < ApplicationController
   # POST /line_items.xml
   def create
     @cart = current_cart
-    product = Product.find(params[:product_id])
-    @line_item = @cart.add_product(product.id)
+    if params[:line_item]
+      #ActiveResource
+      params[:line_item][:order_id] = params[:order_id]
+      @line_item = LineItem.new(params[:line_item])
+    else
+      #HTML forms
+      product = Product.find(params[:product_id])
+      @line_item = @cart.add_product(product.id)
+    end
 
     respond_to do |format|
       if @line_item.save

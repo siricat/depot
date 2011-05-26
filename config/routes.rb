@@ -9,7 +9,7 @@ Depot::Application.routes.draw do
   
   scope '(:locale)' do
     resources :users
-    resources :orders
+    resources :orders 
     resources :line_items
     resources :carts
     resources :products do

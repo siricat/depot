@@ -26,11 +26,10 @@
         <% end %>
       <% end %>
 
-      
-      <a href="<%= store_path %>"><%= t('.home') %></a><br />
-      <a href="http://www.../faq"><%= t('.questions') %></a><br />
-      <a href="http://www.../news"><%= t('.news') %></a><br />
-      <a href="http://www.../contact"><%= t('.contact') %></a><br />
+      <a href="<%= store_path %>"><%= t('.home') %> &raquo;</a><br />
+      <a href="http://www.../faq"><%= t('.questions') %> &raquo;</a><br />
+      <a href="http://www.../news"><%= t('.news') %> &raquo;</a><br />
+      <a href="http://www.../contact"><%= t('.contact') %> &raquo;</a><br />
       
       <% if session[:user_id] %>
         </br>
