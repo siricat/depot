@@ -138,7 +138,7 @@
 }
 
 #main {
-  margin-left: 17em;
+  margin-left: 20em;
   padding-top: 4em;
   padding-left: 2em;
   background: white;
@@ -149,7 +149,7 @@
   padding-top: 1em;
   padding left: 2em;
   padding-bottom: 1em;
-  width: 16em;
+  width: 20em;
   background: #141;
 }
 
@@ -189,8 +189,11 @@
   border-top: 1px dotted #595;
   border-bottom: 1px dotted #595;
   margin-bottom: 10px;
+  border-collapse: collapse;
 }
-
+#cart table tr {
+  padding: 10px;
+}
 /* Styles for order form */
 
 .depot_form fieldset {

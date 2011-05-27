@@ -1,0 +1,7 @@
+$("#notice").hide();
+
+if ($('#cart tr').length == 1) { $('#cart').show('blind'); }
+
+$('#cart').html("<%= escape_javascript(render(@cart)) %>");
+
+$('#current_item').css({'background-color':'gold'}).animate({'background-color':'#114411'}, 1000);
